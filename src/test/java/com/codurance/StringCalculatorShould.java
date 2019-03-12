@@ -6,13 +6,17 @@ import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;
 
-public class StringCalculatorShould
-{
+public class StringCalculatorShould {
 
     @Test
     public void shouldReturnZero()
     {
         assertThat(StringCalculator.add(""), is(0));
+    }
+
+    @Test
+    public void shouldReturnOne() {
+        assertThat(StringCalculator.add("1"), is(1));
     }
 
 }
