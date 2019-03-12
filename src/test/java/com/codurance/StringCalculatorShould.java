@@ -1,16 +1,18 @@
 package com.codurance;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertThat;
 
 import org.junit.Test;
+
+import static org.hamcrest.core.Is.is;
 
 public class StringCalculatorShould
 {
 
     @Test
-    public void shouldAnswerWithTrue()
+    public void shouldReturnZero()
     {
-
-        assertTrue( true );
+        assertThat(StringCalculator.add(""), is(0));
     }
+
 }
