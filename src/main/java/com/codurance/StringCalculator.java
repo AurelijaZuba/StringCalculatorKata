@@ -1,14 +1,8 @@
 package com.codurance;
 
-/**
- * Hello world!
- *
- */
 public class StringCalculator
 {
-    public static int add( String numbers)
-    {
-
-        return 1;
+    public static int add( String numbers) {
+        return 0;
     }
 }
