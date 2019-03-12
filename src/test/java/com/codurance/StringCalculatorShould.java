@@ -23,4 +23,9 @@ public class StringCalculatorShould {
     public void shouldReturnAnyPassedNumber() {
         assertThat(StringCalculator.add("2"), is(2));
     }
+
+    @Test
+    public void shouldReturnThree() {
+        assertThat(StringCalculator.add("1,2"), is(3));
+    }
 }
