@@ -19,4 +19,8 @@ public class StringCalculatorShould {
         assertThat(StringCalculator.add("1"), is(1));
     }
 
+    @Test
+    public void shouldReturnAnyPassedNumber() {
+        assertThat(StringCalculator.add("2"), is(2));
+    }
 }
